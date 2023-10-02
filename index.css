@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
 
-/* font-family: 'Big Shoulders Text', cursive; */
-
+/* Global Styles */
 .nav-flex-row {
     display: flex;
     flex-direction: row;
@@ -27,14 +26,15 @@
     font-weight: 300;
 }
 
+/* Section Intro Styles */
 .section-intro {
     height: 820px;
-    background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    width: auto;
+    background-image: url(img/veg-2.jpeg);
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .section-intro h1 {
@@ -56,10 +56,11 @@
     flex: 1;
 }
 
+/* About Section Styles */
 .about-section {
     display: flex;
     align-items: center;
-    background-color: #f3f3f3c0;
+    /* background-color: skyblue; Remove or comment out this line */
     padding: 50px 30px;
 }
 
@@ -86,10 +87,12 @@ a.link-to-book:hover {
     text-transform: uppercase;
 }
 
+/* Carousel Styles */
 .carousel-inner {
     height: 700px;
 }
 
+/* Form and Contact Styles */
 .row-flex {
     display: flex;
     flex-direction: row;
@@ -116,6 +119,7 @@ a.link-to-book:hover {
 .btn.btn-primary:hover {
     background-color: #747474;
 }
+
 .opening-time,
 .contact-adress {
     flex: 1;
@@ -132,8 +136,8 @@ a.link-to-book:hover {
     display: block;
 }
 
-@media (min-width:577px) and (max-width: 800px) {
-
+/* Media Queries */
+@media (min-width: 577px) and (max-width: 800px) {
     .section-intro {
         height: 500px;
     }
@@ -155,7 +159,7 @@ a.link-to-book:hover {
 
 @media screen and (max-width: 576px) {
     .section-intro {
-        height: 300px;
+        height: 250px;
     }
 
     .about-section {
@@ -194,5 +198,5 @@ a.link-to-book:hover {
         font-size: 15px;
         text-align: center;
     }
-
 }
+
